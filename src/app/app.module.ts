@@ -18,7 +18,8 @@ import { SignupComponent } from './Chapter11_Project/signup/signup.component';
 import { AdminComponent } from './Chapter11_Project/admin/admin.component';
 import { NotFoundComponent } from './Chapter11_Project/not-found/not-found.component';
 import { NoAccessComponent } from './Chapter11_Project/no-access/no-access.component';
-import { Chapter11Component } from './chapter11/chapter11.component';
+import { Chapter11Component } from './Chapter11_Lessons/chapter11.component';
+
 
 export function getAuthHttp(http) {
   return new AuthHttp(new AuthConfig({
