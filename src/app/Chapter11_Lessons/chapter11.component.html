@@ -19,3 +19,77 @@
   <br> the content is encoded using base 64 algorithm, in could be decoded
 </h4>
 <img src="assets/Images/C11L4Auth2.PNG" width=500px>
+<hr>
+<h3>Lesson4: Starter Code (Begin project presentation)</h3>
+<hr>
+<h3>Lesson5: Implementing Login</h3>
+<h4> implementing loginn method, with a console log to see the response</h4>
+<img src="assets/Images/C11L5Auth1.PNG" width=400px>
+<h4> in case of correct credentials will receve the token</h4>
+<img src="assets/Images/C11L5Auth2.PNG" width=600px>
+<h4> Implement the condition of the result exists anf token is received
+  <br> that is stored in LocalStorage and return true
+</h4>
+<img src="assets/Images/C11L5Auth3.PNG" width=400px>
+<h4> Stored received token could be checked in console>application
+ 
+</h4>
+<img src="assets/Images/C11L5Auth4.PNG" width=600px>
+<h4> the response from login() is receive in signIn() as credentials
+<br> and is checked is is true or false in programatic routing
+ <br> or inlalidLoging for show error message div
+</h4>
+<img src="assets/Images/C11L5Auth5.PNG" width=400px>
+
+<hr>
+<h3>Lesson6: implementing Logout</h3>
+<h4>inject the authservice in the home component </h4>
+<img src="assets/Images/C11L6Auth3.PNG" width=400px>
+<h4>and bind it with click event in the template</h4>
+<img src="assets/Images/C11L6Auth2.PNG" width=400px>
+<h4>in the method will delete the token from localStorage</h4>
+<img src="assets/Images/C11L6Auth1.PNG" width=400px>
+
+<hr>
+<h3>Lesson7: Showing or Hiding elements</h3>
+<h4>if we have stored a tolken and is nor expired that means that user is loggedin 
+  <br> and isLogged in will return true otherway will return false 
+<br> instal : npm install angular2-jwt --save</h4>
+<img src="assets/Images/C11L7Auth1.PNG" width=400px>
+<h4> we will apply isLoggedIn() in the Home template with *ngIf directive</h4>
+<img src="assets/Images/C11L7Auth2.PNG" width=400px>
+<h4> when logout admin is not swon and in the console we cane select
+</h4>
+<img src="assets/Images/C11L7Auth3.1.PNG" width=400px>
+<h4>
+   expiration date nul and is exipred false</h4>
+<img src="assets/Images/C11L7Auth3.2.PNG" width=400px>
+<h4>
+  refactoring with the global function:
+<br> tokenNotExpired()</h4>
+<img src="assets/Images/C11L7Auth4.PNG" width=400px>
+<h4>in he templete with *ngIf is shown or not the content</h4>
+<img src="assets/Images/C11L7Auth5.PNG" width=400px>
+
+<h3>Lesson8: Showing or Hiding Elements based on User Roll</h3>
+<h4> create a new method surrentUser() for
+  reading the  token content</h4>
+<img src="assets/Images/C11L8Auth1.PNG" width=400px>
+<h4>
+  adding additional condition for user roll based on currentUser return</h4>
+<img src="assets/Images/C11L8Auth1.PNG" width=400px>
+<h4>
+  generate a token with admin =  false </h4>
+<img src="assets/Images/C11L8Auth3.PNG" width=600px>
+
+<h4>
+  and replace the token in the fakeBackEnd </h4>
+<img src="assets/Images/C11L8Auth4.PNG" width=400px>
+<h4>
+  after connect we will not see the admin options </h4>
+<img src="assets/Images/C11L8Auth5.PNG" width=400px>
+
+<h3>Lesson9: Getting the current user</h3>
+<h4> the user will be shown only if is logged in</h4>
+<img src="assets/Images/C11L9Auth1.PNG" width=400px> =>
+<img src="assets/Images/C11L9Auth2.PNG" width=300px>

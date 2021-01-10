@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './Chapter11_Project/home/home.component';
 import { LoginComponent } from './Chapter11_Project/login/login.component';
 import { SignupComponent } from './Chapter11_Project/signup/signup.component';
-import { AdminComponent } from './admin/admin.component';
+import { AdminComponent } from './Chapter11_Project/admin/admin.component';
 import { NotFoundComponent } from './Chapter11_Project/not-found/not-found.component';
 import { NoAccessComponent } from './Chapter11_Project/no-access/no-access.component';
 import { Chapter11Component } from './Chapter11_Lessons/chapter11.component';
