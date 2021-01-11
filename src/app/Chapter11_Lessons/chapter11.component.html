@@ -93,3 +93,50 @@
 <h4> the user will be shown only if is logged in</h4>
 <img src="assets/Images/C11L9Auth1.PNG" width=400px> =>
 <img src="assets/Images/C11L9Auth2.PNG" width=300px>
+
+<h3>Lesson10: CanActivate Interface</h3>
+<h4> In order to im[lement a route guard is needed to create 
+  <br>a class that implements the CanActivate interface</h4>
+<h4> routeGuards protect us against anonimous user: routing to /admin if there is no autentication from token</h4>
+<h4> create the service AuthGuard with injection  of AuthService and Router in the constructor</h4>
+<img src="assets/Images/C11L10Auth1.PNG" width=400px> 
+
+<h4> Adding to the admin route in the module the authGuard protection</h4>
+<img src="assets/Images/C11L10Auth4.PNG" width=500px> =>
+<img src="assets/Images/C11L10Auth3.PNG" width=300px>
+
+<h3>Lesson11: Redirect User after Loggin</h3>
+<h4> in order to continue the routing after loggin ,according with acces levels,
+  <br>to the target shown by intention to access the admin path 
+</h4>
+<h4>that path will be stored in the optional returnUrl </h4>
+<img src="assets/Images/C11L11Auth1.PNG" width=400px>
+<h4>add the queryparam for the state as snapsot </h4>
+<img src="assets/Images/C11L11Auth2.PNG" width=400px>
+<h4>transfer the query route to signIn method.
+  injection of ActivatedRoute needed </h4>
+<img src="assets/Images/C11L11Auth3.PNG" width=400px>
+
+<h3>Lesson12: Protecting Routes based on the User's Role</h3>
+<h4>canActivaye receive an array, where auth guards could come in sequence
+  <br> here will add another guard to ensure that only  admin users
+  <br> could see the admin oprin after loggin
+  Br>  we generate a new service admin-auth-guard
+</h4>
+<img src="assets/Images/C11L12Auth1.PNG" width=400px>
+
+<h4>add second guard created </h4>
+  <img src="assets/Images/C11L11Auth2.PNG" width=400px>
+
+  <h4> Making the code more robuste by chacking if the current user is logged in</h4>
+  <img src="assets/Images/C11L11Auth3.PNG" width=400px>
+
+  <h3>Lesson13: Accesing Protected API resources</h3>
+  <h4> list of orders is accesible only for admin user roll</h4>
+  <img src="assets/Images/C11L13Auth1.PNG" width=400px>
+
+  <h4>with authHttp from 'angular2-jwt'</h4>
+  <img src="assets/Images/C11L13Auth2.PNG" width=400px>
+
+  <h4>if we want to use also the standard http for api's not protected</h4>
+  <img src="assets/Images/C11L13Auth2.PNG" width=400px>
